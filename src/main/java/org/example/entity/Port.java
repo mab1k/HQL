@@ -22,7 +22,7 @@ public class Port {
 
     @ManyToOne
     @JoinColumn(name = "device_id")
-    Device deviceId;
+    Device device;
 
     @Column
     String name;
