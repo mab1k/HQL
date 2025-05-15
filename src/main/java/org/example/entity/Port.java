@@ -17,12 +17,12 @@ public class Port {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    @Column(name = "device_id")
-    Integer deviceId;
-
-//    @ManyToOne
-//    @JoinColumn(name = "device_id")
+//    @Column(name = "device_id")
 //    Integer deviceId;
+
+    @ManyToOne
+    @JoinColumn(name = "device_id")
+    Device deviceId;
 
     @Column
     String name;

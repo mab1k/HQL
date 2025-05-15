@@ -25,5 +25,7 @@ public class Device {
     @Column(name = "max_connections")
     Integer maxConnections;
 
-//    List<Port> portList;
+    @OneToMany
+    @JoinColumn
+    List<Port> portList;
 }
